@@ -28,13 +28,9 @@ const inventory = [
 function logNames(items) {
   // TODO: use `forEach`
 
-  // inventory.forEach(console.log(inventory[name]));
-
-
   inventory.forEach((item) => {
     console.log(item.name);
   });
-
 
 }
 
@@ -44,6 +40,11 @@ function logNames(items) {
  */
 function getUppercaseNames(items) {
   // TODO: use `map`
+
+  inventory.map((item) => {
+    console.log(item.name.toUpperCase());
+  }); 
+
 }
 
 /**
@@ -94,8 +95,8 @@ function getTotalPrice(items) {
 console.log("Welcome! We carry the following items:");
 logNames(inventory);
 
-// console.log("Here are the names again in all uppercase:");
-// console.log(getUppercaseNames(inventory));
+console.log("Here are the names again in all uppercase:");
+console.log(getUppercaseNames(inventory));
 
 // console.log(`In total, we have ${countItems(inventory)} items in stock.`);
 
